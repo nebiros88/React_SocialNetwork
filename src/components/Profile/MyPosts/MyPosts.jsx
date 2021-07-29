@@ -1,18 +1,16 @@
 import s from './MyPosts.module.css';
+import Post from './Post/Post.jsx';
 
 const MyPosts = () => {
   return <div>
     My posts
     <div>
-      New post
+      <textarea></textarea>
+      <button>Add post</button>
     </div>
     <div className={s.posts}>
-      <div className={s.item}>
-        Post 1
-      </div>
-      <div className={s.item}>
-        Post 2
-      </div>
+      <Post />
+      <Post />
     </div>
   </div>
 
