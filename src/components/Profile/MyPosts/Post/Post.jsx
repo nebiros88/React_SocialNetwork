@@ -6,7 +6,7 @@ const Post = (props) => {
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8WJ2J0pFCzprc-akfjWao4hOBmsdX3ujUQ&usqp=CAU' alt='postmakerLogo'></img>
     {props.message}
     <div></div>
-    Likes = {props.likeCouner}
+    Likes = {props.likeCounter}
     <div></div>
     <span>Like</span>
   </div>
