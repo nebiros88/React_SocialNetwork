@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post.jsx';
 
@@ -9,8 +10,8 @@ const MyPosts = () => {
       <button>Add post</button>
     </div>
     <div className={s.posts}>
-      <Post />
-      <Post />
+      <Post message='Hi'likeCouner='15'/>
+      <Post message='It is is my first post'likeCouner='10'/>
     </div>
   </div>
 
