@@ -10,7 +10,6 @@ const Post = (props) => {
     <div></div>
     <span>Like</span>
   </div>
-
 }
 
 export default Post;
