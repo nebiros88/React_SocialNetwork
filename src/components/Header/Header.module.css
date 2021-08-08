@@ -1,9 +1,17 @@
 .header {
   grid-area: h;
-  background-color: lightblue;
+  background-color: #bed5ed;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 5px;
 }
 
-.header img {
-  height: 40px;
-  width: 40px;
+.logo {
+  height: 35px;
+  width: 35px;
+  margin-left: 2%;
+  border-radius: 50%;
 }
