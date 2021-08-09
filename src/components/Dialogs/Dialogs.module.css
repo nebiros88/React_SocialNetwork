@@ -36,3 +36,17 @@
   border-radius: 5px;
   display: inline;;
 }
+
+.newMessageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.textArea {
+  width: 90%;
+}
+
+.sendBtn {
+  width: 20%;
+  margin-left: 70%;
+}
