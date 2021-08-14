@@ -2,8 +2,9 @@
   grid-area: n;
   background-color: #bed5ed;
   padding: 20px;
-  min-height: 500px;
   border-radius: 10px;
+  min-height: 500px;
+  align-self: start;
 }
 
 .item a{

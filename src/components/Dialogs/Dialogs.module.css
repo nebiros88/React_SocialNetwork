@@ -1,6 +1,6 @@
 .dialogs {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 2fr 6fr;
 }
 
 .dialogsItems {
