@@ -3,22 +3,7 @@ const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET-USERS';
 
 let initialState = {
-  users: [
-    {
-      id: 1, name: 'Sergey', surName: 'Sergeev',
-      photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50PAJhgujPKk4EbIEREGx9uiPu2UOoiruJg&usqp=CAU',
-      location: { country: 'Belarus', city: 'Minsk' },
-      status: 'the great user',
-      followed: true
-    },
-    {
-      id: 2, name: 'Ivan', surName: 'Ivanov',
-      photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50PAJhgujPKk4EbIEREGx9uiPu2UOoiruJg&usqp=CAU',
-      location: { country: 'Belarus', city: 'Gomel' },
-      status: 'the great user too',
-      followed: false
-    }
-  ]
+  users: []
 };
 
 const usersReducer = (state = initialState, action) => {

@@ -1,0 +1,58 @@
+.userInfo_wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  min-height: 100px;
+  width: 80%;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #e8f9fc;
+  align-items: center;
+  justify-content: flex-start
+}
+
+.userInfo_wrapper__1col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+  min-width: 60px;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.userAvatar {
+  height: 70%;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.userInfo_wrapper__1col button {
+  margin-top: 5px;
+  width: 80%;
+  height: 20%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 1s;
+  background-color: #0db3d9;
+}
+
+.userInfo_wrapper__1col button:hover {
+ opacity: 0.8;
+ transform: scale(1.1);
+}
+
+.userInfo_wrapper__2col {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.userName {
+  font-size: 20px;
+  font-weight: 600;
+}
