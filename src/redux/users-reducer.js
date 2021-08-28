@@ -28,16 +28,16 @@ const usersReducer = (state = initialState, action) => {
         ...state,
         users: [...action.users]
       }
-    case SELECT_PAGE: 
+    case SELECT_PAGE:
       return {
         ...state,
         selectedPage: action.selectedPage
       }
-      case SET_TOTAL_USERS: 
+    case SET_TOTAL_USERS:
       return {
         ...state,
         totalUsersCount: action.totalUsersCount
-      }    
+      }
     default:
       return state;
   }

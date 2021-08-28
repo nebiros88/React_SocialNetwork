@@ -5,7 +5,7 @@ import userDefaultAvatar from './../../assets/img/user_avatar_default.png';
 
 class Users extends React.Component {
   componentDidMount() {
-    axios.get(`https://social-network.samuraijs.com/api/1.0/users? page=${this.props.selectedPage}&count=${this.props.usersPerPage}`)
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.selectedPage}&count=${this.props.usersPerPage}`)
       .then(response => {
         this.props.setUsers(response.data.items);
         this.props.setTotalUsersCount(response.data.totalCount);
@@ -14,7 +14,7 @@ class Users extends React.Component {
 
   onPageChanged = (page) => {
     this.props.changeSelectedPage(page);
-    axios.get(`https://social-network.samuraijs.com/api/1.0/users? page=${page}&count=${this.props.usersPerPage}`)
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${page}&count=${this.props.usersPerPage}`)
       .then(response => {
         this.props.setUsers(response.data.items);
       });
