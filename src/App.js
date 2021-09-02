@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
-import Profile from './components/Profile/Profile.jsx';
+import ProfileContainer from './components/Profile/ProfileContainer.jsx';
 import UsersContainer from './components/Users/UsersContainer.jsx';
 import DialogsContainer from './components/Dialogs/DialogsContainer.jsx';
 import News from './components/News/News.jsx';
@@ -20,7 +20,7 @@ function App(props) {
         <Navbar></Navbar>
         <div className='app-wrapper-content' >
           <Route path='/dialogs' render={() => <DialogsContainer />} />
-          <Route path='/profile' render={() => <Profile />} />
+          <Route path='/profile/:userId?' render={() => <ProfileContainer />} />
           <Route path='/users' render={() => <UsersContainer/>}/>
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
@@ -28,7 +28,7 @@ function App(props) {
         </div>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;
