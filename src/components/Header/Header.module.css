@@ -3,10 +3,10 @@
   background-color: #bed5ed;
   width: 100%;
   display: flex;
-  align-content: center;
   align-items: center;
   border-radius: 10px;
   margin-top: 5px;
+  justify-content: space-between; 
 }
 
 .logo {
@@ -14,4 +14,12 @@
   width: 35px;
   margin-left: 2%;
   border-radius: 50%;
+}
+
+.loginBlock {
+  margin-right: 2%;
+}
+
+.loginBlock a {
+  color: white;
 }

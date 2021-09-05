@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header/Header.jsx';
+import HeaderContainer from './components/Header/HeaderContainer';
 import Navbar from './components/Navbar/Navbar.jsx';
 import ProfileContainer from './components/Profile/ProfileContainer.jsx';
 import UsersContainer from './components/Users/UsersContainer.jsx';
@@ -16,7 +16,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
-        <Header></Header>
+        <HeaderContainer></HeaderContainer>
         <Navbar></Navbar>
         <div className='app-wrapper-content' >
           <Route path='/dialogs' render={() => <DialogsContainer />} />
