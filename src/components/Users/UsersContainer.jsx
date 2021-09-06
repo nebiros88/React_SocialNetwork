@@ -2,13 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { follow, unfollow, setUsers, changeSelectedPage, setTotalUsersCount, toggleIsFetching } from './../../redux/users-reducer';
 import Users from './Users';
-import axios from 'axios';
+import * as axios from 'axios';
 import Preloader from '../common/Preloader/Preloader';
 
 class UsersContainer extends React.Component {
   componentDidMount() {
     this.props.toggleIsFetching(true)
-    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.selectedPage}&count=${this.props.usersPerPage}`)
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.selectedPage}&count=${this.props.usersPerPage}`, { withCredentials: true })
       .then(response => {
         this.props.toggleIsFetching(false);
         this.props.setUsers(response.data.items);
@@ -19,7 +19,7 @@ class UsersContainer extends React.Component {
   onPageChanged = (page) => {
     this.props.changeSelectedPage(page);
     this.props.toggleIsFetching(true)
-    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${page}&count=${this.props.usersPerPage}`)
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${page}&count=${this.props.usersPerPage}`, { withCredentials: true })
       .then(response => {
         this.props.toggleIsFetching(false);
         this.props.setUsers(response.data.items);
