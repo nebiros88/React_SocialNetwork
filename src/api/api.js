@@ -22,3 +22,15 @@ export const  usersAPI = {
       .then(response => response.data.resultCode);
   }
 };
+
+export const profileAPI = {
+  getProfile(profileID = 2) {
+    return instance.get(`profile/${profileID}`);
+  }
+}
+
+export const headerAPI = {
+  getAuth() {
+    return instance.get(`auth/me`);
+  }
+}
