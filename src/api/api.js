@@ -12,10 +12,7 @@ export const  usersAPI = {
   getUsers(selectedPage = 1, usersPerPage = 10) {
     return instance.get(`users?page=${selectedPage}&count=${usersPerPage}`)
       .then(response => response.data);
-  }
-};
-
-export const followAPI = {
+  },
   postFollow(userId) {
     return instance.post(`follow/${userId}`)
       .then(response => response.data.resultCode);
@@ -24,4 +21,4 @@ export const followAPI = {
     return instance.delete(`follow/${userId}`)
       .then(response => response.data.resultCode);
   }
-}
+};
